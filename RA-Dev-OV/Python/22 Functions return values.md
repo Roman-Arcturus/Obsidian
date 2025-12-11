@@ -345,17 +345,33 @@ Each user has this structure:
 
 ```
 users = [
-    {
-        "name": "Alice",
-        "meta": {
-            "score": 10,
-            "level": 1
-        }
-    },
-    {
-        "name": "Bob",
-        # no meta
-    },
+    {
+        "name": "Alice",
+        "meta": {
+            "score": 10,
+            "level": 1
+        }
+    },
+    {
+        "name": "Bob",
+        # no meta
+    },
+    {
+        "name": "Martha",
+        "meta": {}
+    },        
+    {
+        "name": "Kevin",
+        "meta": {
+            "level": 3
+        }
+    },    
+    {
+        "name": "Roman",
+        "meta": {
+            "score": 9
+        }
+    },    
 ]
 ```
 Notes:
@@ -393,5 +409,34 @@ Rules:
     - the original list
     - any original user dict
     - any original meta dict
+
+```
+def normalize_meta(users: list) -> list:
+    result:list[dict] = []
+    
+    for u in users:
+        name: str = u["name"]
+
+        if "meta" in u:
+            meta: dict = u["meta"].copy()
+            if "score" not in meta:
+                meta["score"] = 0
+            if "level" not in meta:
+                meta["level"] = 1
+        else:
+            meta: dict = {
+                "score" : 0,
+                "level" : 1
+            }
+
+        n_user: dict = {
+            "name" : name,
+            "meta" : meta
+        }
+
+        result.append(n_user)
+
+    return result
+```
 
 

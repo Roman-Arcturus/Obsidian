@@ -134,7 +134,24 @@ result = ops[mode](x)
 
 
 ### Exercise 17 — Function Dispatch Table
+```
+ops: dict = {
+    "square": squared,
+    "triple": triple,
+}
 
+def compute(x: int | float, mode: str) -> int | float | None:
+    fn = ops.get(mode)
+    if fn is None:
+        return None
+    
+    return fn(x)
+
+# advanced variant
+def compute(x, mode):
+    return ops.get(mode, lambda _: None)(x)
+
+```
 
 Next, we will move to:
 
@@ -146,8 +163,9 @@ Next, we will move to:
 - When they are dangerous
 
 ```
-1. I misread the "no ifs" condition and got stuck with the .get() method and stopped thinking after getting a working variant.
-This is a brain freeze pattern that I hope you will notice and help me avoid in the future.
+1. I misread the "no ifs" condition and got stuck with the .get() method 
+   and stopped thinking after getting a working variant. This is a brain freeze 
+   pattern that I hope you will notice and help me avoid in the future.
 
 2. The advanced variant looks elegant, but I agree that it's better suited for later.
 ```
@@ -163,7 +181,8 @@ Short feedback, as requested:
     - You got a working solution
     - You stopped reevaluating structure
     
-    This happens frequently when learning expressive languages. I will actively watch for this pattern and deliberately pause you at such points to re-evaluate intent vs. mechanics.
+    This happens frequently when learning expressive languages. I will actively watch for this pattern 
+    and deliberately pause you at such points to re-evaluate intent vs. mechanics.
     
 2. **Your instinct about the advanced variant is correct**  
     It is elegant but _compresses intent_.  

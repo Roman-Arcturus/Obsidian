@@ -97,4 +97,46 @@ Before the first example, here is the plan for how I will guide you:
 
 This eliminates guesswork and gets you to the point where your brain _automatically sees the right form_.
 
+I just rechecked the last 11 exercises and can say that I undestood the pattern.
 
+```
+result = (
+	map(					      # use map() if the output needs to be adjusted / formatted
+		lambda z: ... ,           # lambda z define the rules for output
+		sorted(                   # the input iterable can be sorted if needed
+			filter(               # the iterable can be also filtered out of something
+				lambda y: ... ,   # filter by condition defined in lambda y
+				input_iterable    # input iterable can be adjusted with Comprehension if necesary
+			),
+			key = lambda x: ... , # sort by field defined in lamda
+			reverse = bool        # optional, sort direction
+		)
+	)
+)
+```
+
+input_iterable -> filtered -> sorted -> mapped -> output_iterable
+allows various combinations of filtering, sorting and maping 
+
+Your mental model is correct and well-articulated.
+Short feedback:
+
+The pipeline view you wrote is exactly right:
+input → filter → sorted → map → output.
+
+You correctly identified the role separation:
+filter() → selection
+sorted() → ordering
+map() → transformation
+
+Your preference for a functional style is appropriate at this stage; 
+it enforces clarity of data flow and discourages hidden mutation.
+
+One refinement to lock in correctness:
+
+In Python, map(), filter(), and generator expressions are lazy.
+
+list(...) (or tuple(...)) is the materialization boundary.
+
+Conceptually, think:
+define pipeline → materialize at the end.

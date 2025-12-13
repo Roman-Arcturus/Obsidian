@@ -178,7 +178,6 @@ Or more concretely:
 
 This is called **late binding**.
 
-
 ## 4. The correct pattern (freeze the value)
 
 ### Solution: introduce a new binding
@@ -246,9 +245,311 @@ def make_multipliers(numbers: list[int]) -> list[callable]:
 
     return funcs
     
-# -> [30, 30, 30]
+result_1 = multipliers[0]
+result_2 = multipliers[1]
+result_3 = multipliers[2]
+
+print(result_1(2), result_2(2), result_3(2) )
+# -> 8 8 8
 ```
 
 ### The fix (best practice)
 
 We bind `n` **at definition time** by copying it into a default argument:
+```
+def make_multipliers(numbers: list[int]) -> list[callable]:
+    funcs = []
+
+    for n in numbers:
+        def multiply(x: int, factor: int = n) -> int:
+            return x * factor
+
+        funcs.append(multiply)
+
+    return funcs
+
+multipliers = make_multipliers([2, 3, 4])
+
+result_1 = multipliers[0]
+result_2 = multipliers[1]
+result_3 = multipliers[2]
+
+print(result_1(2), result_2(2), result_3(2) )
+# ->  4 6 8
+
+```
+
+When Python sees:
+```
+factor: int = n
+```
+it immediately evaluates `n` and stores the **value** inside the function object.
+
+Each iteration creates a function with its **own constant**.
+
+## Step 5 — Unified mental model (single sentence)
+
+> **Closures capture names; default arguments capture values.**
+
+That is the rule you use to reason about all closure behavior in Python.
+
+
+## Step 6 — Sanity check (no code)
+
+Answer this yes/no internally:
+- Does each function now carry its own `factor`?
+- Is any shared mutable state involved?
+- Does calling the function require knowing anything about `n`?
+
+```
+- yes, each created function carry it's own factor 
+- no, there is no shared mutable state in this example 
+- no, to call the function I only provide multiplier.
+```
+
+## Next concept: **Closures as configuration (the first practical pattern)**
+
+We will introduce **one pattern only**.
+
+## What it is
+
+A closure can be used to **configure behavior once**, and then reuse that behavior many times **without repeating parameters**.
+
+This is sometimes called:
+- function specialization
+- partial application (informally, in Python)
+- configuration via closure
+
+## Why it’s useful
+
+It allows you to:
+- Separate **setup** from **execution**
+- Avoid threading the same parameter through many calls
+- Create small, purpose-built functions
+- Keep call sites simple and explicit
+
+This is common in:
+- data processing pipelines
+- validation logic
+- callbacks
+- transformation steps
+
+## Minimal example (single step)
+
+```
+def make_threshold_checker(threshold: int):
+    def is_above(value: int) -> bool:
+        return value > threshold
+
+    return is_above
+```
+
+## Unified mental model
+
+> A closure is a function plus a **private constant environment**.
+
+Here:
+- `threshold` is fixed at creation time
+- `value` is supplied at call time
+
+Exactly the same mechanism you just mastered with `factor`.
+
+## Stop point (important)
+
+Do **not** generalize yet.
+
+Ensure this sentence is fully internalized:
+
+> “The outer function configures behavior; the inner function performs work.”
+
+Confirm this understanding briefly, and we will look at the **first real pitfall** closures introduce in production code.
+
+```
+def make_threshold_checker(threshold: int) -> callable[[int], bool]:
+    def is_above(value: int) -> bool:
+        return value > threshold
+
+    return is_above
+
+# usage example: 
+peak_limit = 42    # a constant that can be put in a config file 
+
+# provide limit value once at the execution of the script:
+check_level = make_threshold_checker(peak_limit)
+
+# then, during the script run we test some changing value 
+# towards the constant defined once
+if check_level(current_value):
+    ...
+```
+
+## Confirmation (no corrections)
+
+- `make_threshold_checker` returns a **function**
+- `threshold` is **bound once** at creation time
+- `check_level` is a **configured predicate**
+- `current_value` is supplied **at call time**
+- No mutation
+- No hidden state
+
+Your comment about `peak_limit` belonging in configuration is exactly the intended use case.
+
+## Unified mental model (restated, one sentence)
+
+> The closure turns a runtime constant into a private parameter.
+
+This is the same mechanism as the fixed `factor` earlier.
+
+## Next step: **The first real pitfall**
+
+We now introduce **one pitfall only**, tightly scoped.
+
+### The pitfall
+
+Closures can accidentally capture **mutable objects**, leading to behavior that changes _without the function being re-created_.
+
+## Minimal illustration
+```
+def make_allowed_checker(allowed: set[int]):
+    def is_allowed(value: int) -> bool:
+        return value in allowed
+
+    return is_allowed
+```
+
+## Why this is dangerous
+
+- `allowed` is mutable
+- The closure holds a **reference**, not a copy
+- External mutation silently changes behavior
+
+This violates predictability.
+
+
+## Unified mental model (single rule)
+
+> Closures are safest when they capture **immutable data**.
+
+---
+
+## Stop point
+
+Before moving on, answer **yes or no** internally:
+- Do you see how mutating `allowed` elsewhere would change `is_allowed`?
+- Do you see why this differs from the `threshold` example?
+
+```
+# provided example:
+def make_allowed_checker(allowed: set[int]):
+    allowed.add(99)  # mutation
+    def is_allowed(value: int) -> bool:
+        return value in allowed
+
+    return is_allowed
+
+# usage example:
+allowed_vals = {22, 33, 44} # defining a set in a config file for example
+check_allowance = make_allowed_checker(allowed_vals) # creating a closure
+
+# during the runtime we get unexpected result and obscure behaviour
+print(check_allowance(22)) # True
+print(check_allowance(99)) # should be False but is_allowed mutated global set
+
+```
+
+> [!NOTE] prompt
+> .... shows the danger of sending a reference to a mutable to any function, even without closure.
+>
+
+This is **exactly correct**.
+
+Closures do **not** introduce this risk.  
+Closures merely make it **easier to forget** that the reference is shared.
+
+## 3. The true rule (single, general rule)
+
+> **Passing a mutable object passes the object, not a copy.  
+> Any mutation affects all holders of that reference.**
+
+This rule applies to:
+- normal functions
+- closures
+- methods
+- modules
+- globals
+
+Closures are not special here.
+
+## 4. Why closures make this risk _worse_
+
+Only one reason:
+- The mutation is **far from the call site**
+- The captured object is **invisible to the caller**
+- The behavior change feels “magical”
+
+That is why closures require discipline.
+
+## 5. Unified mental model (final, compact)
+- Mutability is the risk
+- Closures increase the **distance** between cause and effect
+- Immutability restores predictability
+
+You are reasoning at the correct abstraction level.
+
+### Next (one step only)
+
+Next, we will cover **the single defensive pattern** used in real Python code to neutralize this risk — without banning closures and without overengineering.
+
+
+> [!prompt]
+> Your answer: "Set vs list — one real-life distinction only" was very helpful and exactly what I needed to see a clear difference. Please use this kind of analogies / comparision in future.
+> 
+> I need to pause again. Reading your lessons, capturing them in Obsidian, trying out examples in VS Code, saving my pieces of code to Obsidian as well, switching back to the chat becaue something I try doesnt work requires a lot of concentration.
+> 
+> Without pause and rest the reasoning becomes shallow and the intent shifts to "just make it work"
+> 
+> Thank you and see you later.
+
+Understood. That is a **disciplined and correct decision**, not a retreat.
+
+You are doing exactly what experienced engineers do when they want **durable understanding**, not surface fluency.
+
+I will acknowledge three things explicitly, and then stop.
+
+---
+
+## 1. Your learning behavior is correct
+
+What you described —  
+reading, transcribing into Obsidian, testing in VS Code, reconciling discrepancies — is **deep learning**, not passive consumption.
+
+The moment you notice your intent drifting toward _“just make it work”_, pausing is the right response.
+
+That awareness is a strong signal of good engineering judgment.
+
+---
+
+## 2. The analogy feedback is noted
+
+The “queue vs whitelist” distinction worked because:
+- It maps to **intent**, not implementation
+- It answers _“when would I reach for this?”_
+- It reduces cognitive load
+
+I will continue to introduce new concepts using **one sharp, real-world comparison** where appropriate, and avoid blending abstractions.
+
+---
+
+## 3. Where we will resume (no content now)
+
+When you return, the **next single step** will be:
+
+- The **defensive pattern** for closures capturing mutables  
+    (one technique, one reason, no alternatives)
+
+Nothing will be skipped or assumed.
+
+---
+
+Take the pause. Let the model settle.  
+We will continue with the same precision when you are ready.

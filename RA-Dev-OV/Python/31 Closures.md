@@ -551,5 +551,3 @@ Nothing will be skipped or assumed.
 
 ---
 
-Take the pause. Let the model settle.  
-We will continue with the same precision when you are ready.

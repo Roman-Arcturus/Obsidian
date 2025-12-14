@@ -207,7 +207,73 @@ That is a foundational Python rule, and you applied it correctly.
 Your experiment confirms this model empirically.
 
 
+> [!prompt]
+> Question 2: Does each `multiply` function fully describe its behavior? → **Yes** 
+> 
+> I began writing some pseudocode to explain my understanding but after a while I realized that native Python code is more expressive and cleared to me than my own, made up pseudocode. I beleive it's a good sign. So the short answer: Yes. Each multiply function definitions completely describe their behaviour.
+
+## Confirmation
+
+> **Does each `multiply` function fully describe its behavior? → Yes**
+
+This is correct.
+
+Each `multiply` function:
+- Has all required inputs explicitly defined
+    - `x` (call-time input)
+    - `factor` (creation-time constant)
+- Depends on no external names
+- Reads no mutable state
+- Produces its output solely from its arguments
+
+In other words, each function is **self-contained**.
+
+---
+
+## Important refinement (tightening the mental model)
+
+A more exact statement is:
+
+> Each `multiply` function fully describes its behavior **after it is created**.
+
+Before creation, `n` exists and varies.  
+After creation, `factor` is fixed.
+
+That creation moment is the boundary that matters.
+
+---
+
+## Why your pseudocode instinct matters
+
+Your realization here is a strong signal:
+
+> Native Python code is more expressive than invented pseudocode.
+
+This means:
+- Your mental model now aligns with Python’s execution model
+- You are reasoning _with_ the language, not around it
+- You no longer need a translation layer
+
+That is exactly where clarity begins to compound.
+
+---
+
+## Unified mental model (finalized)
+
+> A well-designed closure is a pure function plus frozen configuration.
+
+Your `multiply` functions satisfy this completely.
 
 
 
+## We now advance (one step only)
+
+### Next lesson: **Defensive copying for mutable configuration**
+
+We will cover:
+- one technique
+- one reason
+- no alternatives
+
+It builds directly on the name/object model you just solidified.
 

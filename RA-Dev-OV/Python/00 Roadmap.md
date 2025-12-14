@@ -1,26 +1,4 @@
 
-```
-# Stable Prompt for Restarting Python Lessons
-
-I am learning Python from scratch. I want you to teach me step-by-step in a modern, professional, best-practice way. Use the following rules:
-
-1. I have prior programming experience (ASM/C/JS), but it was long ago.
-    
-2. I want only **modern, real-project best practices** — do NOT show outdated or alternative approaches unless I ask.
-    
-3. I want to understand **WHY**, not just HOW — provide conceptual depth.
-    
-4. I currently know **nothing** about Python. If you introduce any type, object, function, or module, explain it first.
-    
-5. Follow a structured learning roadmap. We already covered basics and are currently at:  
-    **functions → lists → dicts → sets**.
-    
-6. Use short, clear answers.
-    
-7. Do not change teaching style unless I ask.
-```
-
-
 # Learning Roadmap for Python on Linux Mint
 
 This ensures continuous progress:
@@ -30,7 +8,7 @@ This ensures continuous progress:
 - Functions, lists, dicts, sets
 - Virtualenvs + pip
 - Git basics
-    
+   
 ### Phase 2 — Strong Fundamentals (2–4 weeks)
 - Classes
 - Modules and packages

@@ -78,7 +78,6 @@ This is the “functional pipeline” mental model.
 >For now, please only use built-in Python types and do not import external modules, even standard ones, like "typing."
 Alternatively, you could provide an overview of all the types defined in it so that I can learn how to perform full-blown type hinting. But later. Let's not drift away from our lesson.
 
-
 > [!NOTE] Prompt
 > Let's try a few more examples interactively, one by one.
 Even though I understand how comprehensions, lambda, and higher-order functions work, I have trouble deciding which variant to use and its syntax. So, I first go through previous examples and exercises, find an appropriate one, and modify it.
@@ -106,7 +105,7 @@ result = (
 		sorted(                   # the input iterable can be sorted if needed
 			filter(               # the iterable can be also filtered out of something
 				lambda y: ... ,   # filter by condition defined in lambda y
-				input_iterable    # input iterable can be adjusted with Comprehension if necesary
+				input_iterable    # input iterable can be nested again
 			),
 			key = lambda x: ... , # sort by field defined in lamda
 			reverse = bool        # optional, sort direction
@@ -140,3 +139,4 @@ list(...) (or tuple(...)) is the materialization boundary.
 
 Conceptually, think:
 define pipeline → materialize at the end.
+

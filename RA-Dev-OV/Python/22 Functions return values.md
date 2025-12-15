@@ -345,32 +345,20 @@ Each user has this structure:
 
 ```
 users = [
-    {
-        "name": "Alice",
-        "meta": {
-            "score": 10,
-            "level": 1
-        }
+    {   "name": "Alice",
+        "meta": { "score": 10, "level": 1 }
     },
-    {
-        "name": "Bob",
+    {   "name": "Bob",
         # no meta
     },
-    {
-        "name": "Martha",
+    {   "name": "Martha",
         "meta": {}
     },        
-    {
-        "name": "Kevin",
-        "meta": {
-            "level": 3
-        }
+    {   "name": "Kevin",
+        "meta": { "level": 3 }
     },    
-    {
-        "name": "Roman",
-        "meta": {
-            "score": 9
-        }
+    {   "name": "Roman",
+        "meta": { "score": 9 }
     },    
 ]
 ```

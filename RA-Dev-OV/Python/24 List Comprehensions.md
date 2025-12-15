@@ -22,11 +22,15 @@ They replace patterns like:
 result = []
 for x in items:
     if some_condition(x):
-        result.append(process(x))
+        result.append( process(x) )
 
 # comprehension 
 
-result = [process(x) for x in items if some_condition(x)]
+result = [
+    process(x) 
+    for x in items 
+    if some_condition(x)
+]
 ```
 
 ### Types:
@@ -91,21 +95,36 @@ squared = [n * 2 for n in nums]
 
 **Filtering**
 ```
-even = [n for n in nums if n % 2 == 0]
+even = [
+	n 
+	for n in nums 
+	if n % 2 == 0
+]
 ```
 
 **Mapping + Filtering**
 ```
-descriptions = [f"User: {u['name']}" for u in users if u["active"]]
+descriptions = [
+	f'User: {u["name"]}' 
+	for u in users 
+	if u["active"]
+]
 ```
 
 **Dict comprehension**
 ```
-scores = { u["name"]: u["meta"]["score"] for u in users }
+scores = { 
+	u["name"]: u["meta"]["score"] 
+	for u in users 
+}
 ```
 
 **Set comprehension**
 ```
-unique_tags = { tag for u in users for tag in u["meta"]["tags"] }
+unique_tags = { 
+	tag 
+    for u in users 
+    for tag in u["meta"]["tags"] 
+}
 ```
 

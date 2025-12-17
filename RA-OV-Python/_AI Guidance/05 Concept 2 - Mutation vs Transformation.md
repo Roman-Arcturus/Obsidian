@@ -234,12 +234,11 @@ Insert the following text **exactly**:
 Your second concept is now complete. The vault now contains:
 
 - 2 fully populated **concept notes** (`Names and Binding`, `Mutation vs Transformation`)
-    
 - 1 fully populated **pattern note** (`Defensive Closures`)
-    
 
 ---
 
 Next, we can begin the **pattern note** for `Pure Data Pipelines`, which directly applies the Mutation vs Transformation concept, or create **example notes** for the concept you just finished.
 
 Decide which path you want to take next.
+

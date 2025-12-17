@@ -1,0 +1,240 @@
+{
+  "main": {
+    "id": "8813a7024adeb251",
+    "type": "split",
+    "children": [
+      {
+        "id": "e2cd7b1db8e8f97e",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "8e48774b2c34578d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "AI Guidence/01 AI Prompt.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "01 AI Prompt"
+            }
+          },
+          {
+            "id": "1223c27ab351e645",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "AI Guidence/02 Note Scaffolding.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "02 Note Scaffolding"
+            }
+          },
+          {
+            "id": "5fbb936e1e896e1b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "AI Guidence/03 First concept.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "03 First concept"
+            }
+          }
+        ],
+        "currentTab": 2
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "4fd9f24f7d7a44e2",
+    "type": "split",
+    "children": [
+      {
+        "id": "f733e5a878706eb5",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "b7ace8ad3e46516d",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "b6951b786e5255a2",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "8111d941075276a1",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "cef47b8942fe9cb3",
+    "type": "split",
+    "children": [
+      {
+        "id": "5c2d9fa309f1eb8e",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "13a6c55162d9492e",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Welcome.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for Welcome"
+            }
+          },
+          {
+            "id": "64e8d420e9031d25",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Welcome.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from Welcome"
+            }
+          },
+          {
+            "id": "67d2dc25a394662a",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "95f2def5d6c52975",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "fa6a94906f78ff1c",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Welcome.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of Welcome"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false
+    }
+  },
+  "active": "5fbb936e1e896e1b",
+  "lastOpenFiles": [
+    "AI Guidence/02 Note Scaffolding.md",
+    "AI Guidence/03 First concept.md",
+    "_Meta/Rules of This Vault.md",
+    "AI Guidence/01 AI Prompt.md",
+    "Concepts/Ownership and Boundaries.md",
+    "AI Guidence",
+    "Concepts/Scope vs Lifetime.md",
+    "Concepts/Identity vs Equality.md",
+    "Concepts/Mutation vs Transformation.md",
+    "Concepts/Names and Binding.md",
+    "Examples/Mutable Default Trap.md",
+    "_Meta",
+    "Examples/Late Binding Bug.md",
+    "Cheat Sheets/Closures Quick Reference.md",
+    "Cheat Sheets/Mutation Quick Reference.md",
+    "Patterns/Safe List Processing.md",
+    "Patterns/Pure Data Pipelines.md",
+    "Patterns/Defensive Closures.md",
+    "Examples",
+    "Cheat Sheets",
+    "Patterns",
+    "Concepts"
+  ]
+}

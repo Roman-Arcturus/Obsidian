@@ -65,16 +65,7 @@ result = [
 - lambdas
 - first-class functions
 - closures
-- Just covered: **late binding in closures**
-- Last exercise result: `[30, 30, 30]`
-
-**Next step when continuing:**
-
-- Fixing the closure late-binding issue cleanly
-- Then moving to practical closure patterns and pitfalls
-
-Please continue from this point, maintaining consistency with prior explanations.
-
+- chaning pure functions
 
 ---------
 

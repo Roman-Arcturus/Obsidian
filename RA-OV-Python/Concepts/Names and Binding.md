@@ -44,25 +44,49 @@ Nothing in Python “lives inside” a name.
 ---
 ## Consequences
 
-```
-## Consequences
+1. Rebinding a name never affects other names, even if they previously referred to the same object.
 
-Rebinding a name never affects other names, even if they previously referred to the same object.
+2. Mutating an object affects all names bound to that object.
 
-Mutating an object affects all names bound to that object.
+3. Function arguments are new local names bound to the same objects passed by the caller.
 
-Function arguments are new local names bound to the same objects passed by the caller.
+4. Closures capture names, not values.
 
-Closures capture names, not values.
+5. Loop variables are rebound on each iteration, not recreated.
 
-Loop variables are rebound on each iteration, not recreated.
-
-Understanding these consequences eliminates the need for special rules.
-```
+6. Understanding these consequences eliminates the need for special rules.
 
 ---
 ## Common misconceptions
 
+1. Names are variables that store values.
+
+2. Assignment copies data.
+
+3. Function arguments are passed by value or by reference.
+
+4. A closure freezes the value of a variable.
+
+5. Each loop iteration creates a new variable.
+
+6. Mutation and reassignment are the same operation.
+
 ---
 ## Links
 
+### Concepts
+- [[Scope vs Lifetime]]
+- [[Ownership and Boundaries]]
+- [[Identity vs Equality]]
+
+### Patterns
+- [[Pure Data Pipelines]]
+- [[Defensive Closures]]
+
+### Examples
+- List Append vs New List Creation
+- Immutable String Transformations
+
+### Examples
+- Mutable Default Argument Trap
+- Closure [[Late Binding Bug]]

@@ -214,15 +214,178 @@ Insert the following text **exactly**:
 ```
 ## Consequences
 
-Rebinding a name never affects other names, even if they previously referred to the same object.
+1. Rebinding a name never affects other names, even if they previously referred to the same object.
 
-Mutating an object affects all names bound to that object.
+2. Mutating an object affects all names bound to that object.
 
-Function arguments are new local names bound to the same objects passed by the caller.
+3. Function arguments are new local names bound to the same objects passed by the caller.
 
-Closures capture names, not values.
+4. Closures capture names, not values.
 
-Loop variables are rebound on each iteration, not recreated.
+5. Loop variables are rebound on each iteration, not recreated.
+
+6. Understanding these consequences eliminates the need for special rules.
 
 Understanding these consequences eliminates the need for special rules.
 ```
+### Explanation (do not paste this)
+
+This section does important work:
+- It **derives behavior**, not lists quirks
+- Each line is a direct consequence of the unified mental model
+- There are no exceptions here—only misapplications
+
+Pay special attention to these two lines:
+
+- _“Function arguments are new local names bound to the same objects”_
+- _“Closures capture names, not values”_
+
+Together, they explain:
+
+- argument passing semantics
+- late binding
+- mutable default traps
+
+### Unified mental reinforcement
+
+> If something “leaks” or “changes unexpectedly,”  
+> you are either mutating a shared object or rebinding a name you didn’t mean to.
+
+---
+
+## Stop Here
+
+Before proceeding:
+1. Pick one real bug you previously encountered.
+2. Explain it using **only** these five consequences.
+3. Do not reference syntax or language rules—only bindings and objects.
+
+When ready, reply with:
+
+> “Section 4 accepted. Continue.”
+
+Next we will document **Common misconceptions**, which is where this note becomes a defensive tool against future confusion.
+
+Good. We now explicitly **disarm incorrect mental models**. This is critical; unchallenged misconceptions will resurface later under pressure.
+
+---
+
+## 5. Common misconceptions
+
+Insert the following text **exactly**:
+```
+## Common misconceptions
+
+Names are variables that store values.
+
+Assignment copies data.
+
+Function arguments are passed by value or by reference.
+
+A closure freezes the value of a variable.
+
+Each loop iteration creates a new variable.
+
+Mutation and reassignment are the same operation.
+```
+---
+
+### Explanation (do not paste this)
+
+Every item here is a **false statement** that sounds reasonable—especially to someone with C, JS, or Pascal background.
+
+This section exists so that:
+- You can quickly detect faulty reasoning
+- You can correct yourself without re-learning everything
+- Future notes can link here instead of re-explaining
+
+### Important discipline
+
+Do **not** “fix” these statements in this section.  
+They must remain wrong as written.
+
+The correction lives in:
+- the unified mental model
+- the consequences section
+
+This creates a **tension** that reinforces learning.
+
+---
+
+## Stop Here
+
+Read each misconception and:
+1. State why it feels intuitive
+2. State which sentence in the unified mental model contradicts it
+
+If you can do that cleanly, the concept is solid.
+
+When ready, reply with:
+
+> “Section 5 accepted. Continue.”
+
+We will finish with **Links**, which integrate this concept into the rest of the vault and prepare future expansion.
+
+Excellent. The final section ties this concept into the rest of your vault and establishes connections for patterns and examples.
+
+---
+## 6. Links
+
+Insert the following text **exactly**:
+
+```
+### Concepts
+- Mutation vs Transformation
+- Scope vs Lifetime
+- Identity vs Equality
+- Ownership and Boundaries
+
+### Patterns
+- Defensive Closures
+- Pure Data Pipelines
+
+### Examples
+- Mutable Default Argument Trap
+- Closure Late Binding Bug
+```
+---
+
+### Explanation (do not paste this)
+
+- The **concepts** section points to other concepts this one interacts with.
+- The **patterns** section points to notes where this concept is applied in reusable ways.
+- The **examples** section points to illustrative edge cases or experiments.
+
+This is the **graph-based thinking** Obsidian thrives on:  
+concepts → patterns → examples → back to concepts.
+
+---
+
+## Step Complete
+
+With this, your first concept note is fully populated:
+
+1. What it is
+2. Why it’s useful
+3. Unified mental model
+4. Consequences
+5. Common misconceptions
+6. Links
+
+### Next Steps
+
+1. Review the note carefully, ensuring every section aligns with your mental model.
+
+2. Once satisfied, we can **create the first pattern note** (`Defensive Closures`) that applies this concept in code.
+
+Confirm with:
+
+> “Names and Binding complete. Ready for first pattern.”
+
+and we will proceed.
+
+Excellent. Now we will create your **first pattern note**, applying the concept of **Names and Binding** in a practical, reusable way.
+
+We will proceed **slowly and deliberately**, one section at a time.
+
+---

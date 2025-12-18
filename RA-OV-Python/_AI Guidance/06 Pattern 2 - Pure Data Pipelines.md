@@ -250,3 +250,8 @@ Which would you like to do next?
 Perfect. We now start the **third concept note**: `Scope vs Lifetime`.
 
 We will follow the **same disciplined, step-by-step approach** as before. Every section will be precise, conceptually grounded, and linked for vault integration.
+
+---
+
+Continue:
+[[07 Concept 3 - Scope vs Lifetime]]

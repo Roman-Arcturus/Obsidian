@@ -242,3 +242,7 @@ Next, we can begin the **pattern note** for `Pure Data Pipelines`, which directl
 
 Decide which path you want to take next.
 
+---
+
+Continue:
+[[06 Pattern 2 - Pure Data Pipelines]]

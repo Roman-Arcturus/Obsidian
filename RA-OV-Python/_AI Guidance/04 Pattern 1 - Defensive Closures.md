@@ -244,3 +244,9 @@ Decide which path you want to take next.
 Excellent. We will now start the **second concept note**: `Mutation vs Transformation`.
 
 We will follow the same **structured, deliberate process** as before. Every section will be anchored in your mental model and connected to your vault.
+
+---
+
+Continue:
+[[05 Concept 2 - Mutation vs Transformation]]
+

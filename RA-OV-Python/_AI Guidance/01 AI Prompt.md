@@ -334,3 +334,6 @@ Starting clean prevents subconscious re-creation of chronological structure.
 ### Unified mental model
 
 > The vault is a **map of laws**, not a diary of travel.
+
+Continuation:
+- [[02 Note Scaffolding]]

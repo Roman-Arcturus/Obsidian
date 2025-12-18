@@ -389,3 +389,6 @@ Excellent. Now we will create your **first pattern note**, applying the concept 
 We will proceed **slowly and deliberately**, one section at a time.
 
 ---
+
+Continue:
+[[04 Pattern 1 - Defensive Closures]]

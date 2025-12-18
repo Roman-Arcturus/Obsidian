@@ -130,3 +130,5 @@ This file exists to stop future you from sabotaging present you.
 
 Once the structure exists, we will **fill exactly one concept completely**, slowly and rigorously.
 
+Continue:
+[[03 Concept 1 - Names and Binding]]

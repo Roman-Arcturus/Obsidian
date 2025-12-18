@@ -255,4 +255,7 @@ Following this plan, the next step is the **fourth concept note**: `Identity vs 
 
 We will continue the same **structured, deliberate approach** as before.
 
+---
 
+Continue:
+[[08 Concept 4 - Identity vs Equality]]

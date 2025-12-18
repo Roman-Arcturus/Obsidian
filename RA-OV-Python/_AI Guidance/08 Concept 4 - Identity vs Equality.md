@@ -251,3 +251,8 @@ Your vault now contains:
 Next, we can begin creating the **pattern note** that applies Identity vs Equality, or move on to the **fifth concept** (`Ownership and Boundaries`) and continue the concept-pattern-example cycle.
 
 Do you want to proceed with **the next concept**?
+
+---
+
+Continue:
+[[09 Concept 5 - Ownership and Boundaries]]

@@ -15,18 +15,18 @@ The intent is **not** to ban mutation, but to:
 - Prefer transformation at boundaries
 
 This pattern is a **direct application** of:
-- [[Ownership and Boundaries]]
-- [[Mutation vs Transformation]]
-- [[Identity vs Equality]]
-- [[Names and Binding]]
+- [[ct05 Ownership and Boundaries]]
+- [[ct02 Mutation vs Transformation]]
+- [[ct04 Identity vs Equality]]
+- [[ct01 Names and Binding]]
 
 ---
 ## Concepts involved
 
-- [[Names and Binding]]  
-- [[Mutation vs Transformation]]  
-- [[Identity vs Equality]]  
-- [[Ownership and Boundaries]]
+- [[ct01 Names and Binding]]  
+- [[ct02 Mutation vs Transformation]]  
+- [[ct04 Identity vs Equality]]  
+- [[ct05 Ownership and Boundaries]]
 
 ### Explanation
 
@@ -34,16 +34,16 @@ This pattern is not about lists per se; it is about **managing shared mutable id
 
 How each concept participates:
 
-- **[[Names and Binding]]**  
+- **[[ct01 Names and Binding]]**  
     Multiple names may reference the same list. Processing a list safely requires awareness of shared bindings.
     
-- **[[Mutation vs Transformation]]**  
+- **[[ct02 Mutation vs Transformation]]**  
     List operations may mutate in place or produce new lists. Choosing between them defines safety at boundaries.
     
-- **[[Identity vs Equality]]**  
+- **[[ct04 Identity vs Equality]]**  
     Two lists may be equal but not identical; mutating one only affects shared identities.
     
-- **[[Ownership and Boundaries]]**  
+- **[[ct05 Ownership and Boundaries]]**  
     Safe processing depends on whether the current scope _owns_ the list or merely _borrows_ it.
 
 By explicitly grounding the pattern in these concepts, we ensure it remains **predictable, explainable, and scalable**.
@@ -98,11 +98,11 @@ It tries to **contain it**, so that cause and effect remain close.
 
 ### Explanation
 
-- Step 1 enforces **[[Ownership and Boundaries]]**: mutation is allowed only if you are the owner.
+- Step 1 enforces **[[ct05 Ownership and Boundaries]]**: mutation is allowed only if you are the owner.
     
-- Step 2 applies **[[Mutation vs Transformation]]**: prefer transformation when ownership is ambiguous.
+- Step 2 applies **[[ct02 Mutation vs Transformation]]**: prefer transformation when ownership is ambiguous.
     
-- Step 3 uses **[[Names and Binding]]** awareness: prevent shared references from escaping.
+- Step 3 uses **[[ct01 Names and Binding]]** awareness: prevent shared references from escaping.
     
 - Step 4 and 5 provide **predictable, maintainable, and Pythonic** practices.
     
@@ -138,14 +138,14 @@ Key takeaway:
 ## Links
 
 ### Concepts
-- [[Names and Binding]]
-- [[Mutation vs Transformation]]
-- [[Identity vs Equality]]
-- [[Ownership and Boundaries]]
+- [[ct01 Names and Binding]]
+- [[ct02 Mutation vs Transformation]]
+- [[ct04 Identity vs Equality]]
+- [[ct05 Ownership and Boundaries]]
 
 ### Patterns
-- [[Defensive Closures]]
-- [[Pure Data Pipelines]]
+- [[pt01 Defensive Closures]]
+- [[pt02 Pure Data Pipelines]]
 
 ### Examples
 - Transforming vs Mutating Lists

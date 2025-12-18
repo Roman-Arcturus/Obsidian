@@ -94,7 +94,7 @@ This ensures that each closure has an independent reference to the intended obje
 ## Links
 
 ### Concepts
-- [[Names and Binding]]
+- [[ct01 Names and Binding]]
 - Scope vs Lifetime
 - Mutation vs Transformation
 - Ownership and Boundaries

@@ -75,19 +75,19 @@ Nothing in Python “lives inside” a name.
 ## Links
 
 ### Concepts
-- [[Scope vs Lifetime]]
-- [[Ownership and Boundaries]]
-- [[Identity vs Equality]]
+- [[ct03 Scope vs Lifetime]]
+- [[ct05 Ownership and Boundaries]]
+- [[ct04 Identity vs Equality]]
 
 ### Patterns
-- [[Pure Data Pipelines]]
-- [[Defensive Closures]]
+- [[pt02 Pure Data Pipelines]]
+- [[pt01 Defensive Closures]]
 
 ### Examples
-* [[Names and Binding Example]]
+* [[ex01 Names and Binding]]
 - List Append vs New List Creation
 - Immutable String Transformations
 
 ### Examples
 - Mutable Default Argument Trap
-- Closure [[Late Binding Bug]]
+- Closure [[ex09 Late Binding Bug]]

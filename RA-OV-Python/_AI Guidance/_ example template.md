@@ -1,4 +1,14 @@
+
 1. Intent
+2. Concept / Pattern Target
+3. Setup / Input
+4. Code / Execution
+5. Output / Behavior
+6. Lessons Learned / Notes
+
+
+
+## 1. Intent
 
 ```
 ## Intent
@@ -10,9 +20,7 @@
 ### Explanation
 
 - Clarifies **why the example exists**.
-    
 - Connects directly to the concept(s) or pattern(s) it illustrates.
-    
 
 _Stop here. Confirm with:_
 

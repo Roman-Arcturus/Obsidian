@@ -56,14 +56,14 @@ Understanding the separation of scope and lifetime allows reasoning about visibi
 ## Links
 
 ### Concepts
-- [[Names and Binding]]
-- [[Mutation vs Transformation]]
-- [[Ownership and Boundaries]]
-- [[Identity vs Equality]]
+- [[ct01 Names and Binding]]
+- [[ct02 Mutation vs Transformation]]
+- [[ct05 Ownership and Boundaries]]
+- [[ct04 Identity vs Equality]]
 
 ### Patterns
-- [[Defensive Closures]]
-- [[Pure Data Pipelines]]
+- [[pt01 Defensive Closures]]
+- [[pt02 Pure Data Pipelines]]
 
 ### Examples
 - Closure Retaining Loop Variables

@@ -7,10 +7,10 @@ Transform collections of data step-by-step using pure functions, avoiding mutati
 ---
 ## Concepts Involved
 
-- [[Mutation vs Transformation]]
-- [[Names and Binding]]
-- [[Ownership and Boundaries]]
-- [[Scope vs Lifetime]]
+- [[ct02 Mutation vs Transformation]]
+- [[ct01 Names and Binding]]
+- [[ct05 Ownership and Boundaries]]
+- [[ct03 Scope vs Lifetime]]
 
 ---
 
@@ -56,13 +56,13 @@ Key strategies:
 ## Links
 
 ### Concepts
-- [[Mutation vs Transformation]]
-- [[Names and Binding]]
-- [[Ownership and Boundaries]]
-- [[Scope vs Lifetime]]
+- [[ct02 Mutation vs Transformation]]
+- [[ct01 Names and Binding]]
+- [[ct05 Ownership and Boundaries]]
+- [[ct03 Scope vs Lifetime]]
 
 ### Patterns
-- [[Defensive Closures]]
+- [[pt01 Defensive Closures]]
 
 ### Examples
 - Pure Comprehension Pipeline

@@ -14,10 +14,10 @@ Python does not enforce ownership at the language level; ownership is a conceptu
 - Python’s flexibility makes this concept **critical**, because nothing prevents accidental shared mutation except your design choices.
 
 This concept synthesizes everything so far:
-- **[[Names and Binding]]** → multiple names can point to one object
-- **[[Mutation vs Transformation]]** → mutation must be controlled
-- **[[Scope vs Lifetime]]** → objects outlive scopes
-- **[[Identity vs Equality]]** → shared identity implies shared consequences
+- **[[ct01 Names and Binding]]** → multiple names can point to one object
+- **[[ct02 Mutation vs Transformation]]** → mutation must be controlled
+- **[[ct03 Scope vs Lifetime]]** → objects outlive scopes
+- **[[ct04 Identity vs Equality]]** → shared identity implies shared consequences
 
 ---
 ## Why it’s useful
@@ -40,9 +40,9 @@ This section turns the concept into **engineering leverage**:
 - Boundaries give you checkpoints where you can enforce invariants.
 
 This is the conceptual foundation behind:
-- [[Defensive closures]]
-- [[Pure data pipelines]]
-- [[Safe list processing]] (the upcoming pattern)
+- [[pt01 Defensive Closures]]
+- [[pt02 Pure Data Pipelines]]
+- [[pt03 Safe List Processing]] (the upcoming pattern)
 
 -----
 ## Unified mental model
@@ -61,16 +61,16 @@ This model gives you a **simple, enforceable rule**:
 
 Key connections to prior concepts:
 
-- **[[Names and Binding]]**  
+- **[[ct01 Names and Binding]]**  
     Ownership is not about names; it is about _shared identity_.
     
-- **[[Mutation vs Transformation]]**  
+- **[[ct02 Mutation vs Transformation]]**  
     Mutation is acceptable _only_ within the owner’s boundary.
     
-- **[[Scope vs Lifetime]]**  
+- **[[ct03 Scope vs Lifetime]]**  
     Ownership can persist beyond a scope; boundaries are conceptual, not lexical.
     
-- **[[Identity vs Equality]]**  
+- **[[ct04 Identity vs Equality]]**  
     If two names share identity, they also share ownership consequences.
 
 This mental model lets you reason **locally** about code, even in large systems.
@@ -99,8 +99,8 @@ This explains why idiomatic Python often prefers:
 - Clear contracts over implicit behavior
 
 You should recognize how these rules **naturally lead** to:
-- [[Pure data pipelines]]
-- [[Safe list processing]]
+- [[pt02 Pure Data Pipelines]]
+- [[pt03 Safe List Processing]]
 - Predictable APIs
 
 ------
@@ -137,15 +137,15 @@ This section exists to **train your intuition**, not your syntax.
 ## Links
 
 ### Concepts
-- [[Names and Binding]]
-- [[Mutation vs Transformation]]
-- [[Scope vs Lifetime]]
-- [[Identity vs Equality]]
+- [[ct01 Names and Binding]]
+- [[ct02 Mutation vs Transformation]]
+- [[ct03 Scope vs Lifetime]]
+- [[ct04 Identity vs Equality]]
 
 ### Patterns
-- [[Defensive Closures]]
-- [[Pure Data Pipelines]]
-- [[Safe List Processing]]
+- [[pt01 Defensive Closures]]
+- [[pt02 Pure Data Pipelines]]
+- [[pt03 Safe List Processing]]
 
 ### Examples
 - Mutating vs Non-Mutating APIs

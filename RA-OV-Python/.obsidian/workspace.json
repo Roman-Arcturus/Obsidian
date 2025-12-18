@@ -8,35 +8,20 @@
         "type": "tabs",
         "children": [
           {
-            "id": "a61cbc4cd6573afd",
+            "id": "5d425415c94f899f",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_AI Guidance/11 Example 1 - Names and Binding.md",
+                "file": "Examples/ex05 Ownership and Boundaries.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "11 Example 1 - Names and Binding"
-            }
-          },
-          {
-            "id": "0cf6e9a2b82a686a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Examples/Names and Binding Example.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Names and Binding Example"
+              "title": "ex05 Ownership and Boundaries"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -127,12 +112,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Examples/Names and Binding Example.md",
+                "file": "Examples/ex05 Ownership and Boundaries.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Names and Binding Example"
+              "title": "Outgoing links from ex05 Ownership and Boundaries"
             }
           },
           {
@@ -184,7 +169,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 229.5
+    "width": 211.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -197,34 +182,34 @@
       "bases:Create new base": false
     }
   },
-  "active": "0cf6e9a2b82a686a",
+  "active": "5d425415c94f899f",
   "lastOpenFiles": [
-    "Concepts/Names and Binding.md",
-    "Examples/Names and Binding Example.md",
+    "Examples/ex04 Identity vs Equality.md",
+    "_AI Guidance/14 Example 4 - Identity vs Equality.md",
+    "Concepts/ct04 Identity vs Equality.md",
+    "Concepts/ct02 Mutation vs Transformation.md",
+    "Concepts/ct01 Names and Binding.md",
+    "Concepts/ct05 Ownership and Boundaries.md",
+    "Concepts/ct03 Scope vs Lifetime.md",
+    "Patterns/pt01 Defensive Closures.md",
+    "Patterns/pt02 Pure Data Pipelines.md",
+    "Patterns/pt03 Safe List Processing.md",
+    "Examples/ex03 Scope vs Lifetime.md",
+    "_AI Guidance/13 Example 3 - Scope vs Lifetime.md",
+    "Examples/ex01 Names and Binding.md",
+    "Examples/ex02 Mutation vs Transformation.md",
+    "Examples/ex10 Mutable Default Trap.md",
+    "_AI Guidance/_ example template.md",
+    "Examples/ex09 Late Binding Bug.md",
+    "Examples/ex05 Ownership and Boundaries.md",
+    "Examples/ex06 Defensive Closures.md",
+    "Examples/ex07 Pure Data Pipelines.md",
+    "Examples/ex08 Safe List Processing.md",
+    "_AI Guidance/12 Example 2 - Mutation vs Transformation.md",
     "_AI Guidance/11 Example 1 - Names and Binding.md",
     "_AI Guidance/Examples Scaffolding.md",
     "_AI Guidance/10 Pattern 3 - Safe List Processing.md",
-    "Patterns/Safe List Processing.md",
-    "Concepts/Ownership and Boundaries.md",
     "_AI Guidance/09 Concept 5 - Ownership and Boundaries.md",
-    "_AI Guidance/08 Concept 4 - Identity vs Equality.md",
-    "_AI Guidance/07 Concept 3 - Scope vs Lifetime.md",
-    "_AI Guidance/06 Pattern 2 - Pure Data Pipelines.md",
-    "_AI Guidance/05 Concept 2 - Mutation vs Transformation.md",
-    "_AI Guidance/04 Pattern 1 - Defensive Closures.md",
-    "_AI Guidance/03 Concept 1 - Names and Binding.md",
-    "_AI Guidance/02 Note Scaffolding.md",
-    "_AI Guidance/01 AI Prompt.md",
-    "_AI Guidance/AI Continuity Prompt.md",
-    "_AI Guidance/AI Concept-Pattern Python learning.md",
-    "Concepts/Identity vs Equality.md",
-    "Concepts/Scope vs Lifetime.md",
-    "Concepts/Mutation vs Transformation.md",
-    "_AI Guidance/_ concept template.md",
-    "_AI Guidance/_ example template.md",
-    "_AI Guidance/_ pattern pemplate.md",
-    "_Meta/Rules of This Vault.md",
-    "Patterns/Pure Data Pipelines.md",
     "_AI Guidance",
     "_Meta",
     "Examples",

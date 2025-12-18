@@ -62,14 +62,14 @@ Safe functional-style code favors transformations, especially when objects are s
 ## Links
 
 ### Concepts
-- [[Names and Binding]]
-- [[Scope vs Lifetime]]
-- [[Ownership and Boundaries]]
-- [[Identity vs Equality]]
+- [[ct01 Names and Binding]]
+- [[ct03 Scope vs Lifetime]]
+- [[ct05 Ownership and Boundaries]]
+- [[ct04 Identity vs Equality]]
 
 ### Patterns
-- [[Pure Data Pipelines]]
-- [[Defensive Closures]]
+- [[pt02 Pure Data Pipelines]]
+- [[pt01 Defensive Closures]]
 
 ### Examples
 - List Append vs New List Creation

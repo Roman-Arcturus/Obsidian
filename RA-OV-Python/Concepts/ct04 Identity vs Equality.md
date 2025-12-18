@@ -54,14 +54,14 @@ Immutable objects may be identical for optimization purposes (interning), but th
 ## Links
 
 ### Concepts
-- [[Names and Binding]]
-- [[Mutation vs Transformation]]
-- [[Scope vs Lifetime]]
-- [[Ownership and Boundaries]]
+- [[ct01 Names and Binding]]
+- [[ct02 Mutation vs Transformation]]
+- [[ct03 Scope vs Lifetime]]
+- [[ct05 Ownership and Boundaries]]
 
 ### Patterns
-- [[Defensive Closures]]
-- [[Pure Data Pipelines]]
+- [[pt01 Defensive Closures]]
+- [[pt02 Pure Data Pipelines]]
 
 ### Examples
 - Mutable Object Comparison

@@ -84,6 +84,7 @@ Nothing in Python “lives inside” a name.
 - [[Defensive Closures]]
 
 ### Examples
+* [[Names and Binding Example]]
 - List Append vs New List Creation
 - Immutable String Transformations
 

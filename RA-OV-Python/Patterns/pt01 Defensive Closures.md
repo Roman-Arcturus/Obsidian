@@ -95,13 +95,22 @@ This ensures that each closure has an independent reference to the intended obje
 
 ### Concepts
 - [[ct01 Names and Binding]]
-- Scope vs Lifetime
-- Mutation vs Transformation
-- Ownership and Boundaries
+- [[ct03 Scope vs Lifetime]]
+- [[ct02 Mutation vs Transformation]]
+- [[ct05 Ownership and Boundaries]]
 
 ### Patterns
-- Pure Data Pipelines
+- [[pt02 Pure Data Pipelines]]
 
 ### Examples
-- Closure Late Binding Bug
-- Mutable Default Argument Trap
+- [[ex09 Late Binding Bug]]
+- [[ex10 Mutable Default Trap]]
+
+### Explanation
+
+- **Concepts**: Shows which mental models this pattern relies on.
+- **Patterns**: Points to other patterns that may build upon or combine with this one.
+- **Examples**: Connects to concrete code scenarios where this pattern is applied or needed.
+
+-------
+

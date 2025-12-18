@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "8f4e365cc1fc3f81",
+        "id": "674b3904cde58b7c",
         "type": "tabs",
         "children": [
           {
-            "id": "49af408e1dd00353",
+            "id": "f3ff7f7d0cfc8b78",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Examples/ex07 Pure Data Pipelines.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "ex07 Pure Data Pipelines"
+              "title": "New tab"
             }
           }
         ]
@@ -112,12 +108,11 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Examples/ex07 Pure Data Pipelines.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from ex07 Pure Data Pipelines"
+              "title": "Outgoing links"
             }
           },
           {
@@ -182,8 +177,15 @@
       "bases:Create new base": false
     }
   },
-  "active": "64e8d420e9031d25",
+  "active": "b7ace8ad3e46516d",
   "lastOpenFiles": [
+    "Concepts/ct01 Names and Binding.md",
+    "_AI Guidance/03 Concept 1 - Names and Binding.md",
+    "_AI Guidance/04 Pattern 1 - Defensive Closures.md",
+    "Patterns/pt01 Defensive Closures.md",
+    "Examples/ex10 Mutable Default Trap.md",
+    "Examples/ex09 Late Binding Bug.md",
+    "Examples/ex08 Safe List Processing.md",
     "Examples/ex07 Pure Data Pipelines.md",
     "Examples/ex06 Defensive Closures.md",
     "_AI Guidance/02 Note Scaffolding.md",
@@ -196,20 +198,13 @@
     "_AI Guidance/14 Example 4 - Identity vs Equality.md",
     "Concepts/ct04 Identity vs Equality.md",
     "Concepts/ct02 Mutation vs Transformation.md",
-    "Concepts/ct01 Names and Binding.md",
     "Concepts/ct05 Ownership and Boundaries.md",
     "Concepts/ct03 Scope vs Lifetime.md",
-    "Patterns/pt01 Defensive Closures.md",
     "Patterns/pt02 Pure Data Pipelines.md",
     "Patterns/pt03 Safe List Processing.md",
     "Examples/ex03 Scope vs Lifetime.md",
     "_AI Guidance/13 Example 3 - Scope vs Lifetime.md",
     "Examples/ex01 Names and Binding.md",
-    "Examples/ex02 Mutation vs Transformation.md",
-    "Examples/ex10 Mutable Default Trap.md",
-    "Examples/ex09 Late Binding Bug.md",
-    "Examples/ex08 Safe List Processing.md",
-    "_AI Guidance/12 Example 2 - Mutation vs Transformation.md",
     "_AI Guidance",
     "_Meta",
     "Examples",

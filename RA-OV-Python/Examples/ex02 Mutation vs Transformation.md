@@ -1,13 +1,10 @@
 ## Intent
 
 Demonstrate the difference between mutating a data structure in place and producing a transformed copy, and how this difference affects ownership, predictability, and reuse.
-
 ### Explanation
 
 - This example isolates **one of the most important distinctions in Python**.
-- 
 - It shows how two functions with similar _results_ can have radically different _side effects_.
-
 - It prepares the ground for **Pure Data Pipelines** and **Safe List Processing**.
 
 ---
@@ -28,12 +25,10 @@ Demonstrate the difference between mutating a data structure in place and produc
 - **Names and Binding**: Explains why mutating through one name affects all references.
     
 - **Pure Data Pipelines**: Shows why transformations compose safely and predictably.
-    
 
 This ensures the example is interpreted as a **mental-model demonstration**, not just a coding trick.
 
 ---
-
 ## Setup / Input
 
 - A mutable list of integers:
@@ -48,9 +43,7 @@ This ensures the example is interpreted as a **mental-model demonstration**, not
 ### Explanation
 
 - The list is intentionally **mutable** to make mutation observable.
-    
 - `alias` is introduced to demonstrate **shared bindings** and ownership implications.
-    
 - Using the _same input_ for both functions isolates the behavioral difference to **mutation vs transformation**, not data shape.
 
 ---

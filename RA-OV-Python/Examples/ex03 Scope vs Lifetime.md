@@ -7,11 +7,9 @@ leads to incorrect reasoning about closures and functions.
 ### Explanation
 
 - This example isolates a **frequent mental error**: assuming scope controls lifetime.
-    
 - It shows that:
     - names are resolved by scope rules
     - objects persist as long as they are referenced
-    
 - This example is foundational for understanding:
     - closures
     - returned functions
@@ -29,13 +27,9 @@ leads to incorrect reasoning about closures and functions.
 ### Explanation
 
 - **Scope vs Lifetime**: Core distinction — visibility of a name versus persistence of an object.
-    
 - **Names and Binding**: Explains why returned functions still “see” objects created in another scope.
-    
 - **Ownership and Boundaries**: Clarifies which function owns which objects after returning.
-    
 - **Defensive Closures**: Shows why closures are safe _when you understand what survives and why_.
-    
 
 This ensures the example is read as a **model correction**, not a trick.
 
@@ -62,7 +56,6 @@ This ensures the example is read as a **model correction**, not a trick.
     - The outer function finishes execution
     - Its local scope is gone
     - Yet the object referenced by the closure may still exist
-    
 
 This setup forces us to confront the difference between:
 - **Name visibility (scope)**
@@ -89,15 +82,11 @@ closure_func = outer()
 result = closure_func()
 print("Result:", result)
 ```
-
 ### Explanation
 
 - `value` is **local to `outer`**, so its scope ends when `outer` returns.
-    
 - `inner` references `value`; returning `inner` creates a **closure** that keeps `value` alive.
-    
 - `closure_func()` demonstrates that the **object’s lifetime exceeds the scope** of the variable that created it.
-    
 - This example is fully **side-effect free**, focusing purely on scope vs lifetime.
 
 ---
@@ -121,7 +110,6 @@ Key insight:
 This explains why closures in Python are safe **if you understand what survives and why**.
 
 ---
-
 ## Lessons Learned / Notes
 
 - Scope determines **where names are visible**, lifetime determines **how long objects persist**.  

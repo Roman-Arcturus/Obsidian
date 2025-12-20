@@ -126,13 +126,6 @@ Key takeaway:
 - When performance considerations make creating new lists unnecessarily costly, and ownership is unambiguous.  
 - When immutable sequences (tuples) suffice; transformation patterns are simpler and safer.
 
-### Explanation
-
-- **When to use** enforces **ownership discipline** and prevents accidental shared mutation.
-    
-- **When not to use** avoids unnecessary overhead and preserves performance where mutation is safe and local.
-    
-- This section translates the abstract concept of ownership into **practical guidance for day-to-day Python coding**.
 
 ---
 ## Links
@@ -148,19 +141,8 @@ Key takeaway:
 - [[pt02 Pure Data Pipelines]]
 
 ### Examples
-- Transforming vs Mutating Lists
+- [[ex02 Mutation vs Transformation]]
 - Local Copies for Safety
 - Function Contracts for Mutation
 
-### Explanation
-
-- **Concepts**: Shows which mental models underpin safe list processing.
-
-- **Patterns**: Connects to previously documented patterns that reinforce ownership, purity, and controlled mutation.
-
-- **Examples**: Prepares a space for disposable code snippets demonstrating safe and unsafe list operations.
-
-At this point, the **Safe List Processing pattern** is fully documented and integrated.
-
----
-
+------

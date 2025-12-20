@@ -42,7 +42,7 @@ This section turns the concept into **engineering leverage**:
 This is the conceptual foundation behind:
 - [[pt01 Defensive Closures]]
 - [[pt02 Pure Data Pipelines]]
-- [[pt03 Safe List Processing]] (the upcoming pattern)
+- [[pt03 Safe List Processing]]
 
 -----
 ## Unified mental model
@@ -151,14 +151,5 @@ This section exists to **train your intuition**, not your syntax.
 - Mutating vs Non-Mutating APIs
 - Defensive Copies at Boundaries
 
-### Explanation
-
-- These links make **Ownership and Boundaries** a _converging concept_:  
-    it explains why the earlier concepts matter operationally.
-
-- It also sets up the **Safe List Processing** pattern naturally:  
-    lists are the most common mutable object where ownership violations occur.
-
-At this point, your **concept layer is complete**.
 
 ---------

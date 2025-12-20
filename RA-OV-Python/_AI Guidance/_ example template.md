@@ -1,12 +1,12 @@
 
-1. Intent
-2. Concept / Pattern Target
-3. Setup / Input
-4. Code / Execution
-5. Output / Behavior
-6. Lessons Learned / Notes
+- Section 1: Intent
+- Section 2: Concept / Pattern Target
+- Section 3: Setup / Input
+- Section 4: Code / Execution
+- Section 5: Output / Behavior
+- Section 6: Lessons Learned / Notes
 
-
+----
 
 
 ## 1. Intent

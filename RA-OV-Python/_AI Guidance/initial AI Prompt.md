@@ -336,7 +336,7 @@ Starting clean prevents subconscious re-creation of chronological structure.
 > The vault is a **map of laws**, not a diary of travel.
 
 Continuation:
-- [[02 Note Scaffolding]]
+- [[Scaffolding]]
 
 > [!realization]
 > I want to make one remark: The structure, density, verbosity, and clarity of your answers far surpass what I had two weeks ago when I first typed my prompt, "I want to learn Python from scratch." As you told me in another chat, AI acts as a magnifying glass for the user's existing thoughts. The clearer and more deeply I understand, the better your answers become. Thank you, and I'll see you in an hour.

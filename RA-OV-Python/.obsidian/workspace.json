@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "06eb86232bfdca26",
+        "id": "644a80711dc358f8",
         "type": "tabs",
         "children": [
           {
-            "id": "aa79405015e9feb9",
+            "id": "d30daa56e8531ad0",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_Meta/Directory structure.md",
+                "file": "_AI Guidance/20-12-2025.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Directory structure"
+              "title": "20-12-2025"
             }
           }
         ]
@@ -112,12 +112,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_Meta/Directory structure.md",
+                "file": "_AI Guidance/20-12-2025.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": false
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Directory structure"
+              "title": "Outgoing links from 20-12-2025"
             }
           },
           {
@@ -169,7 +169,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -182,15 +183,24 @@
       "bases:Create new base": false
     }
   },
-  "active": "aa79405015e9feb9",
+  "active": "d30daa56e8531ad0",
   "lastOpenFiles": [
-    "_AI Guidance/_ example template.md",
-    "_AI Guidance/Examples Scaffolding.md",
-    "_AI Guidance/02 Note Scaffolding.md",
+    "Anti-Patterns",
+    "Patterns/Untitled",
+    "Constrains/cn03 No Hidden Mutation.md",
+    "Constrains/cn02 Explicit Ownership.md",
+    "Constrains/cn01 Functional Defaults.md",
+    "_AI Guidance/20-12-2025.md",
+    "Constrains",
     "_AI Guidance/AI Concept-Pattern Python learning.md",
+    "_AI Guidance/initial AI Prompt.md",
+    "_AI Guidance/Scaffolding.md",
+    "_Meta/Directory structure.md",
+    "_Meta/template - concept.md",
+    "_Meta/template - example.md",
+    "_AI Guidance/Examples Scaffolding.md",
     "_AI Guidance/13 Example 3 - Scope vs Lifetime.md",
     "Examples/ex03 Scope vs Lifetime.md",
-    "_AI Guidance/_ concept template.md",
     "_AI Guidance/12 Example 2 - Mutation vs Transformation.md",
     "Examples/ex02 Mutation vs Transformation.md",
     "Examples/ex01 Names and Binding.md",
@@ -201,15 +211,8 @@
     "_AI Guidance/09 Concept 5 - Ownership and Boundaries.md",
     "Concepts/ct04 Identity vs Equality.md",
     "_AI Guidance/08 Concept 4 - Identity vs Equality.md",
-    "_AI Guidance/01 AI Prompt.md",
     "Concepts/ct01 Names and Binding.md",
     "Concepts/ct03 Scope vs Lifetime.md",
-    "_AI Guidance/07 Concept 3 - Scope vs Lifetime.md",
-    "Patterns/pt02 Pure Data Pipelines.md",
-    "_AI Guidance/06 Pattern 2 - Pure Data Pipelines.md",
-    "Concepts/ct02 Mutation vs Transformation.md",
-    "_AI Guidance/05 Concept 2 - Mutation vs Transformation.md",
-    "_AI Guidance/03 Concept 1 - Names and Binding.md",
     "_AI Guidance",
     "_Meta",
     "Examples",

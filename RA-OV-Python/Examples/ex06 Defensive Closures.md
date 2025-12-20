@@ -94,19 +94,14 @@ print("Defensive results:", defensive_results)
 ### Explanation
 
 - **Unsafe closure**:
-    
     - Uses the loop variable `i` directly.
-        
     - All functions reference the same variable `i` (late binding).
-        
     - When executed, all functions may produce the same unexpected result.
         
 - **Defensive closure**:
-    
     - Captures the current value of `numbers[i]` via a default argument `x=numbers[i]`.
-        
     - Each function now safely remembers its intended value.
-        
+    
 - This demonstrates **defensive programming** with closures without introducing mutation.
 
 ---

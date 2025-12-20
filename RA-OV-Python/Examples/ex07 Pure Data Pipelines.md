@@ -6,17 +6,11 @@ using transformations on data, avoiding in-place mutation.
 ### Explanation
 
 - Focuses on **transforming data without mutation**, enabling clear and reusable pipelines.
-    
 - Highlights **why functional composition works** in Python when transformations are pure.
-    
 - Reinforces mental models:
-    
     - Mutation vs Transformation
-        
     - Pure Data Pipelines
-        
     - Ownership and Boundaries
-        
 - Prepares the learner to safely chain operations like `map`, `filter`, and comprehensions.
 
 ---
@@ -31,11 +25,8 @@ using transformations on data, avoiding in-place mutation.
 ### Explanation
 
 - **Pure Data Pipelines**: Core focus — creating composable, side-effect-free transformations.
-    
 - **Mutation vs Transformation**: Demonstrates why in-place changes break predictability.
-    
 - **Ownership and Boundaries**: Shows how transformation preserves boundaries and avoids unintended mutation.
-    
 - **Safe List Processing**: Provides a practical context for safely chaining operations on lists.
 
 This ensures the example demonstrates **both mental clarity and practical application**.
@@ -55,9 +46,7 @@ This ensures the example demonstrates **both mental clarity and practical applic
 ### Explanation
 
 - `numbers` is **immutable in the sense that we will not change it in place**.
-    
 - Each transformation produces a **new list**, preserving the input and enabling safe composition.
-    
 - This setup emphasizes **predictability, reusability, and side-effect-free design**.
 
 ------
@@ -114,16 +103,12 @@ Stringified: ['2', '6', '10']
 ### Explanation
 
 - **Original list** remains unchanged, demonstrating **no mutation**.
-    
 - Each step produces a **new list**, preserving boundaries and enabling safe composition.
-    
 - Transformations are **predictable and reproducible**.
-    
 - Highlights key insights for **Pure Data Pipelines**:
     - Inputs are never mutated
     - Outputs depend only on inputs
     - Each stage can be independently reasoned about and reused
-
 
 **Key insight:**
 
@@ -148,9 +133,7 @@ Stringified: ['2', '6', '10']
 ### Explanation
 
 - Reinforces the principle that **functional-style transformations** are safer than in-place mutation for pipeline construction.
-    
 - Highlights the link between **ownership boundaries** and **predictable behavior**.
-    
 - Supports mental models needed for chaining higher-order functions and building robust Python programs.
 
 ---

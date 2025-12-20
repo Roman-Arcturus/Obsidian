@@ -106,11 +106,5 @@ This ensures that each closure has an independent reference to the intended obje
 - [[ex09 Late Binding Bug]]
 - [[ex10 Mutable Default Trap]]
 
-### Explanation
-
-- **Concepts**: Shows which mental models this pattern relies on.
-- **Patterns**: Points to other patterns that may build upon or combine with this one.
-- **Examples**: Connects to concrete code scenarios where this pattern is applied or needed.
-
 -------
 

@@ -65,7 +65,7 @@ This setup forces us to confront the difference between:
 
 ## Code / Execution
 
-```
+```python
 
 def outer():
     value = 42  # local variable in outer scope

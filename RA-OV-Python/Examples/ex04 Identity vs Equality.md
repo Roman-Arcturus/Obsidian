@@ -59,7 +59,7 @@ This ensures the example reinforces **mental models**, not just syntax.
 
 ## Code / Execution
 
-```
+```python
 ## Code / Execution
 
 # Immutable integers

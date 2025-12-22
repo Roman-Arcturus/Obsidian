@@ -50,7 +50,7 @@ This ensures the example is interpreted as a **mental-model demonstration**, not
 
 ## Code / Execution
 
-```
+```python
 def mutate_in_place(values: list[int]) -> None:
     """
     Mutates the input list by doubling each element.

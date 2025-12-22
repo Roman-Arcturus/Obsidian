@@ -52,7 +52,7 @@ This section ensures the example is **anchored in the mental model** rather than
 
 ## Code / Execution
 
-```
+```python
 numbers = [1, 2, 3]
 alias = numbers            # alias references the same list
 copy_numbers = numbers[:]  # shallow copy

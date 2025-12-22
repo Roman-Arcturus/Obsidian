@@ -62,7 +62,7 @@ This ensures the example teaches **both the problem and safe solution** clearly.
 ---
 ## Code / Execution
 
-```
+```python
 ## Code / Execution
 
 numbers = [1, 2, 3, 4, 5, 6]

@@ -54,7 +54,7 @@ This ensures the example teaches both the **problem** and **pattern for safe res
 
 ## Code / Execution
 
-```
+```python
 ## Code / Execution
 
 numbers = [1, 2, 3]

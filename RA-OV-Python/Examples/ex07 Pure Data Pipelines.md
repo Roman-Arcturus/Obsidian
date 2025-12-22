@@ -53,7 +53,7 @@ This ensures the example demonstrates **both mental clarity and practical applic
 
 ## Code / Execution
 
-```
+```python
 ## Code / Execution
 
 numbers = [1, 2, 3, 4, 5]

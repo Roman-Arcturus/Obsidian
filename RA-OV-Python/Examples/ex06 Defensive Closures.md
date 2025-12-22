@@ -65,7 +65,7 @@ This ensures the example demonstrates **both the problem and the safe pattern**.
 
 ## Code / Execution
 
-```
+```python
 ## Code / Execution
 
 numbers = [1, 2, 3]

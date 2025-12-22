@@ -58,7 +58,7 @@ def add_item(item, collection=[]):
 
 ## Code Execution
 
-```
+```python
 ## Code Execution
 
 # Mutable Default Trap

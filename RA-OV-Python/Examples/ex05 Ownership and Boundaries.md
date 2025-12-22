@@ -55,7 +55,7 @@ This ensures the example reinforces **mental models**, not just code behavior.
 
 ## Code / Execution
 
-```
+```python
 ## Code / Execution
 
 def process_owned(lst: list[int]) -> None:

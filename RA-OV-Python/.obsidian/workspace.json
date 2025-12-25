@@ -184,8 +184,9 @@
   },
   "active": "8781de1511287451",
   "lastOpenFiles": [
-    "_AI Guidance/22 Dec 2025.md",
+    "_AI Guidance/guidede_practice_xx.md",
     "_AI Guidance/Guided Practice - Recommended Order.md",
+    "_AI Guidance/22 Dec 2025.md",
     "Examples/ex11 Defensive Interface Implementation.md",
     "Examples/ex10 Mutable Default Trap.md",
     "Examples/ex09 Late Binding Bug.md",
@@ -209,7 +210,6 @@
     "_AI Guidance/Concept 7 - Interfaces vs Implementation.md",
     "_AI Guidance/Concept 6 - Data Shape vs Data Meaning.md",
     "Constrains/cn04 Evaluation Timing vs Lazy Mutation.md",
-    "Concepts/ct06 Data Shape vs Data Meaning.md",
     "Anti-Patterns",
     "Patterns/Untitled",
     "Constrains",
